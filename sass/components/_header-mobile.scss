@@ -86,6 +86,16 @@
         padding: 48px 40px;
     }
 
+    &__item-current {
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 1.18;
+        letter-spacing: 0.02em;
+        
+        color: rgba(33, 150, 243, 1);
+        margin-bottom: 32px;
+}
+
     &__item {
         font-weight: 500;
         font-size: 40px;
@@ -133,6 +143,7 @@
         &__contact {
             display: flex;
             padding-top: 64px;
+            color: rgba(33, 150, 243, 1);
             
         }
 

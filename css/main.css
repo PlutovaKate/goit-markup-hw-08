@@ -919,7 +919,7 @@ body {
 .clients__list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  gap: 30px;
 }
 @media screen and (min-width: 767.98px) {
   .clients__list {
@@ -963,20 +963,11 @@ body {
 }
 .clients__company {
   width: 100%;
-}
-@media screen and (min-width: 479.98px) {
-  .clients__company {
-    flex-basis: calc((100% - 30px) / 2);
-  }
-  .clients__company:nth-child(2n+1) {
-    margin-left: 0;
-  }
-  .clients__company:nth-last-child(n+4) {
-    padding-bottom: 30px;
-  }
+  gap: 30px;
+  flex-basis: calc((100% - 30px) / 2);
 }
 @media screen and (min-width: 767.98px) {
-  .clients__company {
+  .clients {
     flex-basis: calc((100% - 60px) / 3);
   }
 }
@@ -1084,7 +1075,7 @@ body {
   }
 }
 .footer__field {
-  width: 450px;
+  width: 100%;
   height: 50px;
   background: rgb(47, 48, 58);
   border: 1px solid rgba(255, 255, 255, 0.6);
@@ -1425,6 +1416,14 @@ body {
   margin-left: auto;
   padding: 48px 40px;
 }
+.mob-menu__item-current {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.18;
+  letter-spacing: 0.02em;
+  color: rgb(33, 150, 243);
+  margin-bottom: 32px;
+}
 .mob-menu__item {
   font-weight: 500;
   font-size: 40px;
@@ -1461,6 +1460,7 @@ body {
 .mob-menu__contact {
   display: flex;
   padding-top: 64px;
+  color: rgb(33, 150, 243);
 }
 .mob-menu__auth-nav {
   padding-top: 102px;
