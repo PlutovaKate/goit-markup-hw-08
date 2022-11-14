@@ -25,53 +25,59 @@
   </head>
 
   <body>
+    <header class="header">
+      <!-- header-mobile -->
 
-<header class="header">
+      <div class="mobile-header">
+        <a href="./index.html" class="logo mobile__logo">
+          Web<span class="header__logo">Studio</span></a
+        >
 
-  <!-- header-mobile -->
+        <button class="menu-btn js-open-menu">
+          <svg width="24px" height="16px">
+            <use
+              class="menu-btn__menu"
+              href="./images/icons.svg#icon-menu_mobile"
+            ></use>
+          </svg>
+        </button>
+      </div>
 
-<div class="mobile-header">
+      <div class="mob-menu js-menu-container">
+        <div class="mob-menu__body">
+          <button class="menu-btn__close js-close-menu">
+            <svg width="24px" height="16px">
+              <use href="./images/icons.svg#icon-close_header-menu"></use>
+            </svg>
+          </button>
+          <ul>
+            <li class="mob-menu__item-current"><a href=""></a>Студія</li>
+            <li class="mob-menu__item"><a href=""></a>Портфоліо</li>
+            <li class="mob-menu__item"><a href=""></a>Контакти</li>
+          </ul>
+          <ul class="mob-menu__auth-nav">
+            <li class="mob-menu__tel">
+              <a class="mob-menu__mob" href="tel:+380961111111"
+                >+38 096 111 11 11</a
+              >
+            </li>
+            <li>
+              <a class="mob-menu__email" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+          <ul class="mob-menu__contact">
+            <li class="mob-menu__link"><a href=""></a>Instagram</li>
+            <li class="mob-menu__link"><a href=""></a>Twitter</li>
+            <li class="mob-menu__link"><a href=""></a>Facebook</li>
+            <li class="mob-menu__link"><a href=""></a>LinkedIn</li>
+          </ul>
+        </div>
+      </div>
 
-   <a href="./index.html" class="logo mobile__logo">
-    Web<span class="header__logo">Studio</span></a>
+      <!-- header-desctop -->
 
-
-
-<button class="menu-btn js-open-menu">
-  <svg width="24px" height="16px">
-    <use class="menu-btn__menu" href="./images/icons.svg#icon-menu_mobile"></use>
-  </svg>
-  </button>
-</div> 
-
-<div class="mob-menu js-menu-container">
-
-  <div class="mob-menu__body">
-    <button class="menu-btn__close js-close-menu">
-      <svg width="24px" height="16px">
-        <use href="./images/icons.svg#icon-close_header-menu"></use>
-        </svg>
-    </button>
-    <ul>
-      <li class="mob-menu__item-current"><a href=""></a>Студія</li>
-      <li class="mob-menu__item"><a href=""></a>Портфоліо</li>
-      <li class="mob-menu__item"><a href=""></a>Контакти</li>
-    </ul>
-    <ul class="mob-menu__auth-nav">
-      <li class="mob-menu__tel"><a class="mob-menu__mob" href="tel:+380961111111">+38 096 111 11 11</a></li>
-      <li><a class="mob-menu__email" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-    </ul>
-    <ul class="mob-menu__contact">
-      <li class="mob-menu__link"><a href="" ></a>Instagram</li>
-      <li class="mob-menu__link"><a href="" ></a>Twitter</li>
-      <li class="mob-menu__link"><a href="" ></a>Facebook</li>
-      <li class="mob-menu__link"><a href="" ></a>LinkedIn</li>
-    </ul>
-  </div>
-</div>
-
-<!-- header-desctop -->
-    
       <div class="container header__main-nav">
         <nav class="header__nav">
           <a href="./index.html" class="logo">
@@ -92,7 +98,8 @@
               <svg class="header__svg" width="16px" height="12px">
                 <use href="./images/icons.svg#icon-envelope"></use>
               </svg>
-              info@devstudio.com</a>
+              info@devstudio.com</a
+            >
           </li>
 
           <li class="item">
@@ -118,8 +125,6 @@
               <button data-modal-open type="button" class="button">
                 Замовити послугу
               </button>
-
-              
             </div>
           </div>
         </div>
@@ -182,7 +187,6 @@
             </li>
           </ul>
         </div>
-     
       </section>
 
       <!--Чем занимается-->
@@ -241,67 +245,67 @@
           <ul class="team__list">
             <li class="team__item">
               <div class="team__card">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/demyanenko-480.webp    1x,
+                      ./images/demyanenko-480@2x.webp 2x
+                    "
+                    type="image/webp"
+                    media="(max-width: 767px)"
+                  />
 
-               <picture>
+                  <source
+                    srcset="
+                      ./images/demyanenko-480.jpg    1x,
+                      ./images/demyanenko-480@2x.jpg 2x
+                    "
+                    type="image/jpg"
+                    media="(max-width: 767px)"
+                  />
 
-               <source
-                srcset="
-                ./images/demyanenko-480.webp 1x,
-                ./images/demyanenko-480@2x.webp 2x"
+                  <source
+                    srcset="
+                      ./images/demyanenko-1200.webp    1x,
+                      ./images/demyanenko-1200@2x.webp 2x
+                    "
+                    type="image/webp"
+                    media="(min-width: 1200px)"
+                  />
 
-                type="image/webp"
-                media="(max-width: 767px)"
-                />
+                  <source
+                    srcset="
+                      ./images/demyanenko-1200.jpg    1x,
+                      ./images/demyanenko-1200@2x.jpg 2x
+                    "
+                    type="image/jpg"
+                    media="(min-width: 1200px)"
+                  />
 
-                <source
-                srcset="
-                ./images/demyanenko-480.jpg 1x,
-                ./images/demyanenko-480@2x.jpg 2x"
+                  <source
+                    srcset="
+                      ./images/demyanenko-768.webp    1x,
+                      ./images/demyanenko-768@2x.webp 2x
+                    "
+                    type="image/webp"
+                    media="(min-width: 768px)"
+                  />
 
-                type="image/jpg"
-                media="(max-width: 767px)"
-                />
+                  <source
+                    srcset="
+                      ./images/demyanenko-768.jpg    1x,
+                      ./images/demyanenko-768@2x.jpg 2x
+                    "
+                    type="image/jpg"
+                    media="(min-width: 768px)"
+                  />
 
-                <source
-                srcset="
-                ./images/demyanenko-1200.webp 1x,
-                ./images/demyanenko-1200@2x.webp 2x"
-                
-                type="image/webp"
-                media="(min-width: 1200px)"
-                />
+                  <img
+                    src="./images/demyanenko-1200.jpg1x,./images/demyanenko-1200@2x.jpg2x"
+                    alt="Дем'яненко"
+                  />
+                </picture>
 
-                <source
-                srcset="
-                ./images/demyanenko-1200.jpg 1x,
-                ./images/demyanenko-1200@2x.jpg 2x"
-                
-                type="image/jpg"
-                media="(min-width: 1200px)"
-                />
-
-                <source
-                srcset="
-                ./images/demyanenko-768.webp 1x,
-                ./images/demyanenko-768@2x.webp 2x"
-                
-                type="image/webp"
-                media="(min-width: 768px)"
-                />
-
-                <source
-                srcset="
-                ./images/demyanenko-768.jpg 1x,
-                ./images/demyanenko-768@2x.jpg 2x"
-                
-                type="image/jpg"
-                media="(min-width: 768px)"
-                />
-
-               <img src="./images/demyanenko-1200.jpg 1x, ./images/demyanenko-1200@2x.jpg 2x"
-                alt="">
-               </picture>
-  
                 <!-- <img
                   class="team__image"
                   src="./images/demyanenko.jpg"
@@ -352,67 +356,66 @@
             </li>
             <li class="team__item">
               <div class="team__card">
-
                 <picture>
+                  <source
+                    srcset="
+                      ./images/repina-480.webp    1x,
+                      ./images/repina-480@2x.webp 2x
+                    "
+                    type="image/webp"
+                    media="(max-width: 767px)"
+                  />
 
                   <source
-                   srcset="
-                   ./images/repina-480.webp 1x,
-                   ./images/repina-480@2x.webp 2x"
-   
-                   type="image/webp"
-                   media="(max-width: 767px)"
-                   />
-   
-                   <source
-                   srcset="
-                   ./images/repina-480.jpg 1x,
-                   ./images/repina-480@2x.jpg 2x"
-   
-                   type="image/jpg"
-                   media="(max-width: 767px)"
-                   />
-   
-                   <source
-                   srcset="
-                   ./images/repina-1200.webp 1x,
-                   ./images/repina-1200@2x.webp 2x"
-                   
-                   type="image/webp"
-                   media="(min-width: 1200px)"
-                   />
-   
-                   <source
-                   srcset="
-                   ./images/repina-1200.jpg 1x,
-                   ./images/repina-1200@2x.jpg 2x"
-                   
-                   type="image/jpg"
-                   media="(min-width: 1200px)"
-                   />
-   
-                   <source
-                   srcset="
-                   ./images/repina-768.webp 1x,
-                   ./images/repina-768@2x.webp 2x"
-                   
-                   type="image/webp"
-                   media="(min-width: 768px)"
-                   />
-   
-                   <source
-                   srcset="
-                   ./images/repina-768.jpg 1x,
-                   ./images/repina-768@2x.jpg 2x"
-                   
-                   type="image/jpg"
-                   media="(min-width: 768px)"
-                   />
-   
-                  <img src="./images/repina-1200.jpg 1x, ./images/repina-1200@2x.jpg 2x"
-                   alt="">
-                  </picture>
+                    srcset="
+                      ./images/repina-480.jpg    1x,
+                      ./images/repina-480@2x.jpg 2x
+                    "
+                    type="image/jpg"
+                    media="(max-width: 767px)"
+                  />
 
+                  <source
+                    srcset="
+                      ./images/repina-1200.webp    1x,
+                      ./images/repina-1200@2x.webp 2x
+                    "
+                    type="image/webp"
+                    media="(min-width: 1200px)"
+                  />
+
+                  <source
+                    srcset="
+                      ./images/repina-1200.jpg    1x,
+                      ./images/repina-1200@2x.jpg 2x
+                    "
+                    type="image/jpg"
+                    media="(min-width: 1200px)"
+                  />
+
+                  <source
+                    srcset="
+                      ./images/repina-768.webp    1x,
+                      ./images/repina-768@2x.webp 2x
+                    "
+                    type="image/webp"
+                    media="(min-width: 768px)"
+                  />
+
+                  <source
+                    srcset="
+                      ./images/repina-768.jpg    1x,
+                      ./images/repina-768@2x.jpg 2x
+                    "
+                    type="image/jpg"
+                    media="(min-width: 768px)"
+                  />
+
+                  <img
+                    src="./images/repina-1200.jpg1x,./images/repina-1200@2x.jpg2x"
+                    alt="Рєпіна"
+                  />
+                </picture>
 
                 <!-- <img
                   class="team__image"
@@ -463,68 +466,66 @@
             </li>
             <li class="team__item">
               <div class="team__card">
-
-
                 <picture>
+                  <source
+                    srcset="
+                      ./images/tarasov-480.webp    1x,
+                      ./images/tarasov-480@2x.webp 2x
+                    "
+                    type="image/webp"
+                    media="(max-width: 767px)"
+                  />
 
                   <source
-                   srcset="
-                   ./images/tarasov-480.webp 1x,
-                   ./images/tarasov-480@2x.webp 2x"
-   
-                   type="image/webp"
-                   media="(max-width: 767px)"
-                   />
-   
-                   <source
-                   srcset="
-                   ./images/tarasov-480.jpg 1x,
-                   ./images/tarasov-480@2x.jpg 2x"
-   
-                   type="image/jpg"
-                   media="(max-width: 767px)"
-                   />
-   
-                   <source
-                   srcset="
-                   ./images/tarasov-1200.webp 1x,
-                   ./images/tarasov-1200@2x.webp 2x"
-                   
-                   type="image/webp"
-                   media="(min-width: 1200px)"
-                   />
-   
-                   <source
-                   srcset="
-                   ./images/tarasov-1200.jpg 1x,
-                   ./images/tarasov-1200@2x.jpg 2x"
-                   
-                   type="image/jpg"
-                   media="(min-width: 1200px)"
-                   />
-   
-                   <source
-                   srcset="
-                   ./images/tarasov-768.webp 1x,
-                   ./images/tarasov-768@2x.webp 2x"
-                   
-                   type="image/webp"
-                   media="(min-width: 768px)"
-                   />
-   
-                   <source
-                   srcset="
-                   ./images/tarasov-768.jpg 1x,
-                   ./images/tarasov-768@2x.jpg 2x"
-                   
-                   type="image/jpg"
-                   media="(min-width: 768px)"
-                   />
-   
-                  <img src="./images/tarasov-1200.jpg 1x, ./images/tarasov-1200@2x.jpg 2x"
-                   alt="">
-                  </picture>
+                    srcset="
+                      ./images/tarasov-480.jpg    1x,
+                      ./images/tarasov-480@2x.jpg 2x
+                    "
+                    type="image/jpg"
+                    media="(max-width: 767px)"
+                  />
 
+                  <source
+                    srcset="
+                      ./images/tarasov-1200.webp    1x,
+                      ./images/tarasov-1200@2x.webp 2x
+                    "
+                    type="image/webp"
+                    media="(min-width: 1200px)"
+                  />
+
+                  <source
+                    srcset="
+                      ./images/tarasov-1200.jpg    1x,
+                      ./images/tarasov-1200@2x.jpg 2x
+                    "
+                    type="image/jpg"
+                    media="(min-width: 1200px)"
+                  />
+
+                  <source
+                    srcset="
+                      ./images/tarasov-768.webp    1x,
+                      ./images/tarasov-768@2x.webp 2x
+                    "
+                    type="image/webp"
+                    media="(min-width: 768px)"
+                  />
+
+                  <source
+                    srcset="
+                      ./images/tarasov-768.jpg    1x,
+                      ./images/tarasov-768@2x.jpg 2x
+                    "
+                    type="image/jpg"
+                    media="(min-width: 768px)"
+                  />
+
+                  <img
+                    src="./images/tarasov-1200.jpg1x,./images/tarasov-1200@2x.jpg2x"
+                    alt="Тарасов"
+                  />
+                </picture>
 
                 <!-- <img
                   class="team__image"
@@ -575,67 +576,66 @@
             </li>
             <li class="team__item">
               <div class="team__card">
-
                 <picture>
+                  <source
+                    srcset="
+                      ./images/ermakov-480.webp    1x,
+                      ./images/ermakov-480@2x.webp 2x
+                    "
+                    type="image/webp"
+                    media="(max-width: 767px)"
+                  />
 
                   <source
-                   srcset="
-                   ./images/ermakov-480.webp 1x,
-                   ./images/ermakov-480@2x.webp 2x"
-   
-                   type="image/webp"
-                   media="(max-width: 767px)"
-                   />
-   
-                   <source
-                   srcset="
-                   ./images/ermakov-480.jpg 1x,
-                   ./images/ermakov-480@2x.jpg 2x"
-   
-                   type="image/jpg"
-                   media="(max-width: 767px)"
-                   />
-   
-                   <source
-                   srcset="
-                   ./images/ermakov-1200.webp 1x,
-                   ./images/ermakov-1200@2x.webp 2x"
-                   
-                   type="image/webp"
-                   media="(min-width: 1200px)"
-                   />
-   
-                   <source
-                   srcset="
-                   ./images/ermakov-1200.jpg 1x,
-                   ./images/ermakov-1200@2x.jpg 2x"
-                   
-                   type="image/jpg"
-                   media="(min-width: 1200px)"
-                   />
-   
-                   <source
-                   srcset="
-                   ./images/ermakov-768.webp 1x,
-                   ./images/ermakov-768@2x.webp 2x"
-                   
-                   type="image/webp"
-                   media="(min-width: 768px)"
-                   />
-   
-                   <source
-                   srcset="
-                   ./images/ermakov-768.jpg 1x,
-                   ./images/ermakov-768@2x.jpg 2x"
-                   
-                   type="image/jpg"
-                   media="(min-width: 768px)"
-                   />
-   
-                  <img src="./images/ermakov-1200.jpg 1x, ./images/ermakov-1200@2x.jpg 2x"
-                   alt="">
-                  </picture>
+                    srcset="
+                      ./images/ermakov-480.jpg    1x,
+                      ./images/ermakov-480@2x.jpg 2x
+                    "
+                    type="image/jpg"
+                    media="(max-width: 767px)"
+                  />
 
+                  <source
+                    srcset="
+                      ./images/ermakov-1200.webp    1x,
+                      ./images/ermakov-1200@2x.webp 2x
+                    "
+                    type="image/webp"
+                    media="(min-width: 1200px)"
+                  />
+
+                  <source
+                    srcset="
+                      ./images/ermakov-1200.jpg    1x,
+                      ./images/ermakov-1200@2x.jpg 2x
+                    "
+                    type="image/jpg"
+                    media="(min-width: 1200px)"
+                  />
+
+                  <source
+                    srcset="
+                      ./images/ermakov-768.webp    1x,
+                      ./images/ermakov-768@2x.webp 2x
+                    "
+                    type="image/webp"
+                    media="(min-width: 768px)"
+                  />
+
+                  <source
+                    srcset="
+                      ./images/ermakov-768.jpg    1x,
+                      ./images/ermakov-768@2x.jpg 2x
+                    "
+                    type="image/jpg"
+                    media="(min-width: 768px)"
+                  />
+
+                  <img
+                    src="./images/ermakov-1200.jpg1x,./images/ermakov-1200@2x.jpg2x"
+                    alt="Єрмаков"
+                  />
+                </picture>
 
                 <!-- <img
                   class="team__image"
@@ -850,7 +850,7 @@
       </div>
     </footer>
 
- <!-- бэкдроп -->
+    <!-- бэкдроп -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="modal-btn" data-modal-close>
@@ -860,9 +860,7 @@
         </button>
 
         <form class="form">
-          <p class="form-title">
-            Залиште свої дані, ми вам передзвонимо
-          </p>
+          <p class="form-title">Залиште свої дані, ми вам передзвонимо</p>
 
           <label for="inputName" class="label">Ім'я</label>
           <div class="input-wrapper">
@@ -917,12 +915,7 @@
           </textarea>
 
           <label class="check-label">
-            <input
-              type="checkbox"
-              name="check"
-              class="input-check"
-              checked
-            />
+            <input type="checkbox" name="check" class="input-check" checked />
             <span class="check-wrapp">
               <svg class="check-icon" width="16" height="15">
                 <use href="./images/icons.svg#icon-icon-check"></use>
@@ -930,18 +923,13 @@
             </span>
 
             Погоджуюся з розсилкою та приймаю
-            <a href="#" target="_blank" class="check-link">
-              Умови договору
-            </a>
+            <a href="#" target="_blank" class="check-link"> Умови договору </a>
           </label>
 
-          <button class="button form-button" type="submit">
-            Відправити
-          </button>
+          <button class="button form-button" type="submit">Відправити</button>
         </form>
       </div>
     </div>
-
 
     <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
