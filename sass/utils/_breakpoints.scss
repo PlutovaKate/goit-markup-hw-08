@@ -1,0 +1,21 @@
+$mobile:479.98px;
+$pre-tablet: 767px;
+$tablet:767.98px;
+$pre-desktop: 1199px;
+$desktop:1199.98px;
+
+@media screen and (max-width: $desktop) {
+    
+}
+
+@media screen and (min-width: $tablet) {
+
+}
+
+@media screen and (min-width: $tablet) and (max-width: $pre-desktop) {
+   
+}
+
+@media screen and (min-width: $desktop) {
+    
+}

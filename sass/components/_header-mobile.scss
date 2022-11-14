@@ -1,0 +1,156 @@
+
+.mobile-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 40px;
+    height: 40px;
+    background-color: var(--white-color);
+    cursor: pointer;
+    border: none;
+    position: relative;
+    z-index: 2;
+
+    @media screen and (min-width: $tablet) {
+    display: none;
+    }
+    
+
+    @media screen and (min-width: $desktop) {
+    display: none;
+    }
+
+}
+
+.menu-btn__close {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: var(--white-color);
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    outline: none;
+
+}
+
+.menu-btn__close {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.mobile__logo {
+    margin-left: 15px;
+    @media screen and (min-width: $tablet) {
+    display: none;
+    }
+
+    @media screen and (min-width: $desktop) {
+    display: none;
+    } 
+}
+
+.mob-menu {
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    background-color: var(--white-color);
+    transform: translate(100%);
+    width: 100%;
+    z-index: 100;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+    &.is-open {
+        transform: translate(0);
+    }
+
+    &__body {
+        position: relative;
+        max-width: 480px;
+        width: 100%;
+        background-color: var(--white-color);
+        margin-right: auto;
+        margin-left: auto;
+        padding: 48px 40px;
+    }
+
+    &__item {
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 1.18;
+        letter-spacing: 0.02em;
+        
+        color: var(--title-text-color);
+        margin-bottom: 32px;
+        &:last-child {
+            padding-bottom: 0;
+        }
+        
+        &:hover,
+        &:focus {
+            color: var(--blue-color);
+        }
+        }
+
+        &__mob {
+            font-weight: 500;
+            font-size: 34px;
+            line-height: 1.18;   
+            letter-spacing: 0.02em;
+            color: var(--blue-color);
+            text-decoration: none;
+                
+            
+        }
+
+        &__tel {
+            margin-bottom: 32px;
+            }
+
+        &__email {
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 1.17;
+            letter-spacing: 0.02em;
+            
+            color: #757575;
+            text-decoration: none;
+        
+        }
+
+        &__contact {
+            display: flex;
+            padding-top: 64px;
+            
+        }
+
+        &__auth-nav {
+            padding-top: 102px;
+            }
+
+    &__link {
+                margin-right: 10px;
+                padding-right: 10px;
+                border-right: 1px solid rgba(33, 33, 33, 0.2); 
+                &:last-child {
+                    border: none;
+                }
+        
+    }  
+}          
+                
+
+
+

@@ -1,0 +1,53 @@
+// .section-engage 
+
+.engage {
+  padding-top: 0;
+  display: none;
+
+  &__list {
+    padding-top: 50px;
+    display: flex;
+  }
+
+  &__img {
+    margin-left: 30px;
+
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+
+  &__descr {
+    position: absolute;
+    bottom: 7px;
+    left: 0;
+    width: 100%;
+    height: 70px;
+  
+    background-color: rgba(47, 48, 58, 0.8);
+    color: rgba(255, 255, 255, 1);
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+  }
+  @media screen and (min-width: $tablet) {
+    display: none;
+  }
+
+  @media screen and (min-width: $desktop) {
+    display: flex;
+  }
+}
+    
+    .wrapper__image {
+      position: relative;
+    }
+    
+  
+   
+  
+  
