@@ -525,7 +525,7 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 450px;
+  max-width: 450px;
   padding: 40px;
   background-color: rgb(255, 255, 255);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -533,7 +533,7 @@ body {
 }
 @media screen and (min-width: 1199.98px) {
   .modal {
-    width: 528px;
+    max-width: 528px;
   }
 }
 
@@ -564,7 +564,7 @@ body {
 }
 
 .form-title {
-  width: 370px;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 12px;
@@ -843,6 +843,9 @@ body {
 
 .team {
   background-color: #f5f4fa;
+}
+.team__img {
+  max-width: 100%;
 }
 .team__list {
   display: block;
@@ -1431,6 +1434,10 @@ body {
   margin-right: auto;
   margin-left: auto;
   padding: 48px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
 }
 .mob-menu__item-current {
   font-weight: 500;
@@ -1477,9 +1484,6 @@ body {
   display: flex;
   padding-top: 64px;
   color: rgb(33, 150, 243);
-}
-.mob-menu__auth-nav {
-  padding-top: 102px;
 }
 .mob-menu__link {
   margin-right: 10px;

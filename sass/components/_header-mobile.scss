@@ -76,6 +76,7 @@
         transform: translate(0);
     }
 
+
     &__body {
         position: relative;
         max-width: 480px;
@@ -84,6 +85,11 @@
         margin-right: auto;
         margin-left: auto;
         padding: 48px 40px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
     }
 
     &__item-current {
@@ -147,9 +153,9 @@
             
         }
 
-        &__auth-nav {
-            padding-top: 102px;
-            }
+        // &__auth-nav {
+        //     padding-top: 102px;
+        //     }
 
     &__link {
                 margin-right: 10px;
@@ -160,7 +166,14 @@
                 }
         
     }  
-}          
+} 
+
+// .mob-menu__wrap {
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: space-between;
+//     height: 100%;
+// }
                 
 
 
